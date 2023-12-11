@@ -13,7 +13,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final env = EnvResolver.resolveEnv();
   final selectedStore = EnvResolver.resolveStore();
-  final String envFile = "$env${Env.envFile}";
+  final String envFile = "${Env.envFile}.$env";
 
   await dotenv.load(fileName: ".$envFile", mergeWith: {"STORE_ID": selectedStore.id.toString()});
   // get storage to make possible BloCs rehydration
