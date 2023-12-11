@@ -1,0 +1,116 @@
+name: loyalty_wallet
+description: Loyalty wallet
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+
+  # BLoC dependencies
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  hydrated_bloc: ^9.1.2
+  freezed_annotation: ^2.4.1
+  # locator dependencies
+  injectable: ^2.3.2
+  get_it: ^7.6.4
+  # http dependencies
+  http: ^1.0.0
+  json_serializable: ^6.7.1
+  json_annotation: ^4.8.1
+  # helpful dependencies
+  dartz: ^0.10.1
+  # translations dependencies
+  intl: ^0.18.0
+  localization: ^2.1.0
+  flutter_localization: ^0.1.10
+  # local storage hive dependencies
+  path_provider: ^2.1.1
+  flutter_secure_storage: ^9.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # style dependencies
+  google_fonts: ^6.1.0
+  dynamic_color: ^1.6.8
+  lottie: ^2.7.0
+  animated_text_kit: ^4.2.2
+  animate_do: ^3.1.2
+  # responsive dependencies
+  cached_network_image: ^3.3.0
+  responsive_framework: ^1.1.1
+  # config dependencies
+  flutter_dotenv: ^5.1.0
+  flutter_native_splash: ^2.3.5
+  # riverpod management
+  hooks_riverpod: ^2.4.9
+  flutter_hooks: ^0.20.3
+  riverpod_annotation: ^2.3.3
+
+
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  flutter_flavorizr: ^2.2.1
+  freezed: ^2.4.5
+  build_runner: ^2.4.7
+  injectable_generator: ^2.4.1
+
+  husky: ^0.1.6
+  riverpod_generator: ^2.3.9
+  custom_lint: ^0.5.7
+  riverpod_lint: ^2.3.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  husky: ^0.1.6
+  flutter_lints: ^3.0.1
+  injectable_generator: ^2.4.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - .env.production
+    - .env.staging
+    - .env.local
+    - assets/icons/
+    - assets/icons/flavors/
+    - assets/images/
+    - assets/lottie/empty/
+    - assets/lottie/loading/
+    - assets/lottie/error/
+    - assets/lottie/success/
+
+flavorizr:
+  ide: idea
+  app:
+    android:
+      flavorDimensions: "sprout-production-apps"
+
+  flavors:
+    storeone:
+      app:
+        name: "Store One"
+
+      android:
+        applicationId: "storeone.online.sprout.crm"
+        icon: 'assets/icons/flavors/icon.storeone.png'
+        customConfig:
+          versionNameSuffix: "\"-production\""
+          signingConfig: signingConfigs.storeone
+          versionCode: 100
+          minSdkVersion: 23
+
+      ios:
+        bundleId: "com.storeone.deli"
+        icon: 'assets/icons/flavors/icon.storeone.png'
