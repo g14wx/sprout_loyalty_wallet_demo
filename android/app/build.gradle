@@ -55,6 +55,21 @@ android {
             storePassword keystoreProperties['storePassword']
             println("${storeFileFile}")
         }
+
+        storethree {
+            def keystoreProperties = new Properties()
+            def keystorePropertiesFile = rootProject.file('key.properties.storethree')
+            if (keystorePropertiesFile.exists()) {
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+            }
+            def storeFileFile = keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile storeFileFile
+            storePassword keystoreProperties['storePassword']
+            println("${storeFileFile}")
+        }
     }
 
 
@@ -80,6 +95,16 @@ android {
             versionCode 100
             minSdkVersion 23
             resValue "string", "app_name", "Store Two"
+        }
+
+        storethree {
+            dimension "sprout-production-apps"
+            applicationId "storethree.online.sprout.crm"
+            versionNameSuffix "-production"
+            signingConfig signingConfigs.storethree
+            versionCode 100
+            minSdkVersion 23
+            resValue "string", "app_name", "Store Three"
         }
     }
 

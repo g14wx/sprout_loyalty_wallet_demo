@@ -1,0 +1,7 @@
+flutter_native_splash:
+
+  color: "#ffffff"
+  image: assets/splash/splash.storethree.png
+  android_12:
+    image: assets/splash/splash.storethree.png
+    icon_background_color: "#ffffff"

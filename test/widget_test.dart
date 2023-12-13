@@ -57,6 +57,7 @@ void main() {
       await tester.pumpAndSettle();
       // Then
       expect(appBarTitleHomeEnglish, findsOneWidget);
+      expect(find.text("Home"), findsOneWidget);
     });
   });
 }
