@@ -1,0 +1,30 @@
+name: Flutter Web
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: 🚀 Build Web on develop
+    env:
+      my_secret: ${{secrets.PAT}}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '3.3.0'
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web lib/main_storeone.dart --release --base-href=/storeone/
+      - run: |
+          cd build/web
+          git init
+          git config --global user.email carlos.hernandez3@catolica.edu.sv
+          git config --global user.name g14wx
+          git status
+          git remote add origin https://${{env.my_secret}}@github.com/g14wx/sprout_loyalty_wallet_demo.git
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "update web"
+          git push origin gh-pages -f
