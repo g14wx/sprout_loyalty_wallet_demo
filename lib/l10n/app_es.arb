@@ -1,0 +1,17 @@
+{
+  "hello": "Hola",
+  "closeApp": "¿Deseas cerrar la app?",
+  "closeAppDescription": "Estas apunto de cerrar la app, ¿estas seguro de lo que estas haciendo?",
+  "yes": "Si",
+  "no": "no",
+  "home": "Home",
+  "settings": "Settings",
+  "points": "Puntos",
+  "changeLanguageTo": "Cambiar lenguaje a",
+  "changeThemeTo": "Cambiar Tema a",
+  "light": "Claro",
+  "dark": "Oscuro",
+  "spanish": "Español",
+  "english": "Ingles",
+  "dashboard": "Inicio"
+}

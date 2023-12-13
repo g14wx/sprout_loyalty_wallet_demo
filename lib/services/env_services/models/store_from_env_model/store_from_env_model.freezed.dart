@@ -18,6 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$StoreFromEnvModel {
   String get name => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
+  String get nameEnv => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $StoreFromEnvModelCopyWith<StoreFromEnvModel> get copyWith =>
@@ -30,7 +31,7 @@ abstract class $StoreFromEnvModelCopyWith<$Res> {
           StoreFromEnvModel value, $Res Function(StoreFromEnvModel) then) =
       _$StoreFromEnvModelCopyWithImpl<$Res, StoreFromEnvModel>;
   @useResult
-  $Res call({String name, int id});
+  $Res call({String name, int id, String nameEnv});
 }
 
 /// @nodoc
@@ -48,6 +49,7 @@ class _$StoreFromEnvModelCopyWithImpl<$Res, $Val extends StoreFromEnvModel>
   $Res call({
     Object? name = null,
     Object? id = null,
+    Object? nameEnv = null,
   }) {
     return _then(_value.copyWith(
       name: null == name
@@ -58,6 +60,10 @@ class _$StoreFromEnvModelCopyWithImpl<$Res, $Val extends StoreFromEnvModel>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
+      nameEnv: null == nameEnv
+          ? _value.nameEnv
+          : nameEnv // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -70,7 +76,7 @@ abstract class _$$StoreFromEnvModelImplCopyWith<$Res>
       __$$StoreFromEnvModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String name, int id});
+  $Res call({String name, int id, String nameEnv});
 }
 
 /// @nodoc
@@ -86,6 +92,7 @@ class __$$StoreFromEnvModelImplCopyWithImpl<$Res>
   $Res call({
     Object? name = null,
     Object? id = null,
+    Object? nameEnv = null,
   }) {
     return _then(_$StoreFromEnvModelImpl(
       name: null == name
@@ -96,6 +103,10 @@ class __$$StoreFromEnvModelImplCopyWithImpl<$Res>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
+      nameEnv: null == nameEnv
+          ? _value.nameEnv
+          : nameEnv // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -103,16 +114,19 @@ class __$$StoreFromEnvModelImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$StoreFromEnvModelImpl implements _StoreFromEnvModel {
-  const _$StoreFromEnvModelImpl({required this.name, required this.id});
+  const _$StoreFromEnvModelImpl(
+      {required this.name, required this.id, required this.nameEnv});
 
   @override
   final String name;
   @override
   final int id;
+  @override
+  final String nameEnv;
 
   @override
   String toString() {
-    return 'StoreFromEnvModel(name: $name, id: $id)';
+    return 'StoreFromEnvModel(name: $name, id: $id, nameEnv: $nameEnv)';
   }
 
   @override
@@ -121,11 +135,12 @@ class _$StoreFromEnvModelImpl implements _StoreFromEnvModel {
         (other.runtimeType == runtimeType &&
             other is _$StoreFromEnvModelImpl &&
             (identical(other.name, name) || other.name == name) &&
-            (identical(other.id, id) || other.id == id));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.nameEnv, nameEnv) || other.nameEnv == nameEnv));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, name, id);
+  int get hashCode => Object.hash(runtimeType, name, id, nameEnv);
 
   @JsonKey(ignore: true)
   @override
@@ -138,12 +153,15 @@ class _$StoreFromEnvModelImpl implements _StoreFromEnvModel {
 abstract class _StoreFromEnvModel implements StoreFromEnvModel {
   const factory _StoreFromEnvModel(
       {required final String name,
-      required final int id}) = _$StoreFromEnvModelImpl;
+      required final int id,
+      required final String nameEnv}) = _$StoreFromEnvModelImpl;
 
   @override
   String get name;
   @override
   int get id;
+  @override
+  String get nameEnv;
   @override
   @JsonKey(ignore: true)
   _$$StoreFromEnvModelImplCopyWith<_$StoreFromEnvModelImpl> get copyWith =>

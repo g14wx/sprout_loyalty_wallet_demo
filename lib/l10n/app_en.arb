@@ -1,0 +1,17 @@
+{
+  "hello": "Hello",
+  "closeApp": "Do you really want to close the app?",
+  "closeAppDescription": "You are about to lose information about new orders, its want do you want to close the app?",
+  "yes": "Yes",
+  "no": "No",
+  "home": "Home",
+  "settings": "Settings",
+  "points": "Points",
+  "changeLanguageTo": "Change language to",
+  "changeThemeTo": "Change theme to",
+  "light": "Light",
+  "dark": "Dark",
+  "spanish": "Spanish",
+  "english": "English",
+  "dashboard": "Dashboard"
+}
