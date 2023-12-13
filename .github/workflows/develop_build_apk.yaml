@@ -19,10 +19,11 @@ jobs:
       - name: 'Create env file'
 
         run: |
-          touch .env.local &&
-          touch .env.staging &&
-          touch .env.production &&
-          echo FLUTTER_ENV=production >> .env.production
+          touch dotenv.local &&
+          touch dotenv.staging &&
+          touch dotenv.production &&
+          touch dotenv.test &&
+          echo FLUTTER_ENV=production >> dotenv.production
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
         with:

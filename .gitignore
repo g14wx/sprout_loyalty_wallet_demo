@@ -44,9 +44,10 @@ app.*.map.json
 /android/app/release
 
 /lib/pages/
-.env.production
-.env.staging
-.env.local
+dotenv.production
+dotenv.staging
+dotenv.local
+dotenv.test
 
 # generated images
 android/app/src/main/res/drawable/background.png

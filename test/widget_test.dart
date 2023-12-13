@@ -33,7 +33,7 @@ void main() {
     F.appFlavor = Flavor.storeone;
     const StoreFromEnvModel selectedStore = Stores.storeOne;
     EnvResolver.currentStore = selectedStore;
-    const String envFile = ".env.test";
+    const String envFile = "dotenv.test";
     dotenv.testLoad(fileInput: envFile, mergeWith: {"STORE_ID": selectedStore.id.toString()});
     configureDependencies("test_${selectedStore.nameEnv}");
     // this is for make it works the next line and localize the IInitializationOfDataStorageService instance

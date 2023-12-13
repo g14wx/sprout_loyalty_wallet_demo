@@ -4,5 +4,5 @@ class Env {
   static const String local = "local";
   static const String test = "test";
 
-  static const String envFile = ".env";
+  static const String envFile = "dotenv";
 }

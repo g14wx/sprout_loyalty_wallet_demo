@@ -86,9 +86,9 @@ flutter:
   generate: true
 
   assets:
-    - .env.production
-    - .env.staging
-    - .env.local
+    - dotenv.production
+    - dotenv.staging
+    - dotenv.local
     - assets/icons/
     - assets/icons/flavors/
     - assets/images/
