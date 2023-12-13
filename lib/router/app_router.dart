@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:loyalty_wallet/features/root/features/home/features/home_landing/presentation/entry_root_home_landing_page.dart';
+import 'package:loyalty_wallet/features/root/features/home/features/home_points/presentation/entry_home_points_page.dart';
 import 'package:loyalty_wallet/features/root/features/home/features/home_settings/presentation/entry_home_settings_page.dart';
 import 'package:loyalty_wallet/features/root/features/home/presentation/entry_root_home_page.dart';
 import 'package:loyalty_wallet/features/root/presentation/BLoC/fetch_store_bloc/fetch_store_bloc.dart';
@@ -131,7 +132,7 @@ class AppRouter {
       case AppRoutes.root:
         return MaterialPageRoute(
           builder: (context) {
-            return Container();
+            return const EntryHomePointsPage();
           },
         );
 
