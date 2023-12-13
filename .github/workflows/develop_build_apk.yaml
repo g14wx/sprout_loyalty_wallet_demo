@@ -19,7 +19,7 @@ jobs:
       - name: 'Create env file'
 
         run: |
-          touch .env &&
+          touch .env.production &&
           echo FLUTTER_ENV=production >> .env
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
@@ -29,6 +29,9 @@ jobs:
         with:
           flutter-version: '3.13.2'
       - run: flutter pub get
+      - run: |
+          echo "${{secrets.RELEASE_KEY_STORE}}" > release.keystore.asc
+          gpg -d --passphrase "${{secrets.RELEASE_KEY_STORE_PARAPHRASE}}" --batch release.keystore.asc > android/app/sprout-crm.stores.jks
       - run: cp flutter_native_splash-storeone.yaml flutter_native_splash.yaml && dart run flutter_native_splash:create
       - run: flutter build apk --flavor storeone --dart-define=ENV=production -t lib/main_storeone.dart
       #- run: |
