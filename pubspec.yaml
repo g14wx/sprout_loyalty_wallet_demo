@@ -92,9 +92,7 @@ flutter:
     - assets/icons/
     - assets/icons/flavors/
     - assets/images/
-    - assets/lottie/empty/
     - assets/lottie/loading/
-    - assets/lottie/error/
     - assets/lottie/success/
     # this is for make the test widget, found the Poppins fonts
     - assets/fonts/poppins/
