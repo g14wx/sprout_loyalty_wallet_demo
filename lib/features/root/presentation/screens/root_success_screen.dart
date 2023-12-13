@@ -10,7 +10,6 @@ class RootSuccessScreen extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     useEffect(() {
       Future.delayed(const Duration(seconds: 2)).then((value) {
         Navigator.of(context).pushNamed(AppRoutes.rootHome);

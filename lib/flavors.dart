@@ -15,5 +15,4 @@ class F {
         return 'title';
     }
   }
-
 }

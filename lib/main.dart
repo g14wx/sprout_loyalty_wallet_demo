@@ -32,5 +32,3 @@ Future<void> main() async {
   await initDataStorage.initializationOfDataStorageService();
   runApp(const ProviderScope(child: App()));
 }
-
-

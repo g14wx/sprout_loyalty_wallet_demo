@@ -10,14 +10,20 @@ class MainRootPage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return BlocBuilder<FetchStoreBloc, FetchStoreState>(builder: (context, state) {
-      return state.map(initialState: (value) {
-        return const RootLoadingScreen();
-      }, loading: (value) {
-        return const RootLoadingScreen();
-      }, success: (value) {
-        return const RootSuccessScreen();
-      },);
-    },);
+    return BlocBuilder<FetchStoreBloc, FetchStoreState>(
+      builder: (context, state) {
+        return state.map(
+          initialState: (value) {
+            return const RootLoadingScreen();
+          },
+          loading: (value) {
+            return const RootLoadingScreen();
+          },
+          success: (value) {
+            return const RootSuccessScreen();
+          },
+        );
+      },
+    );
   }
 }

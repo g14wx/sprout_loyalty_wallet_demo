@@ -58,14 +58,12 @@ mixin _$SettingsItems {
 
 /// @nodoc
 abstract class $SettingsItemsCopyWith<$Res> {
-  factory $SettingsItemsCopyWith(
-          SettingsItems value, $Res Function(SettingsItems) then) =
+  factory $SettingsItemsCopyWith(SettingsItems value, $Res Function(SettingsItems) then) =
       _$SettingsItemsCopyWithImpl<$Res, SettingsItems>;
 }
 
 /// @nodoc
-class _$SettingsItemsCopyWithImpl<$Res, $Val extends SettingsItems>
-    implements $SettingsItemsCopyWith<$Res> {
+class _$SettingsItemsCopyWithImpl<$Res, $Val extends SettingsItems> implements $SettingsItemsCopyWith<$Res> {
   _$SettingsItemsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -76,17 +74,14 @@ class _$SettingsItemsCopyWithImpl<$Res, $Val extends SettingsItems>
 
 /// @nodoc
 abstract class _$$ChangeLanguageImplCopyWith<$Res> {
-  factory _$$ChangeLanguageImplCopyWith(_$ChangeLanguageImpl value,
-          $Res Function(_$ChangeLanguageImpl) then) =
+  factory _$$ChangeLanguageImplCopyWith(_$ChangeLanguageImpl value, $Res Function(_$ChangeLanguageImpl) then) =
       __$$ChangeLanguageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ChangeLanguageImplCopyWithImpl<$Res>
-    extends _$SettingsItemsCopyWithImpl<$Res, _$ChangeLanguageImpl>
+class __$$ChangeLanguageImplCopyWithImpl<$Res> extends _$SettingsItemsCopyWithImpl<$Res, _$ChangeLanguageImpl>
     implements _$$ChangeLanguageImplCopyWith<$Res> {
-  __$$ChangeLanguageImplCopyWithImpl(
-      _$ChangeLanguageImpl _value, $Res Function(_$ChangeLanguageImpl) _then)
+  __$$ChangeLanguageImplCopyWithImpl(_$ChangeLanguageImpl _value, $Res Function(_$ChangeLanguageImpl) _then)
       : super(_value, _then);
 }
 
@@ -102,8 +97,7 @@ class _$ChangeLanguageImpl implements _ChangeLanguage {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ChangeLanguageImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$ChangeLanguageImpl);
   }
 
   @override
@@ -178,17 +172,14 @@ abstract class _ChangeLanguage implements SettingsItems {
 
 /// @nodoc
 abstract class _$$ChangeThemeImplCopyWith<$Res> {
-  factory _$$ChangeThemeImplCopyWith(
-          _$ChangeThemeImpl value, $Res Function(_$ChangeThemeImpl) then) =
+  factory _$$ChangeThemeImplCopyWith(_$ChangeThemeImpl value, $Res Function(_$ChangeThemeImpl) then) =
       __$$ChangeThemeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ChangeThemeImplCopyWithImpl<$Res>
-    extends _$SettingsItemsCopyWithImpl<$Res, _$ChangeThemeImpl>
+class __$$ChangeThemeImplCopyWithImpl<$Res> extends _$SettingsItemsCopyWithImpl<$Res, _$ChangeThemeImpl>
     implements _$$ChangeThemeImplCopyWith<$Res> {
-  __$$ChangeThemeImplCopyWithImpl(
-      _$ChangeThemeImpl _value, $Res Function(_$ChangeThemeImpl) _then)
+  __$$ChangeThemeImplCopyWithImpl(_$ChangeThemeImpl _value, $Res Function(_$ChangeThemeImpl) _then)
       : super(_value, _then);
 }
 
@@ -204,8 +195,7 @@ class _$ChangeThemeImpl implements _ChangeTheme {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ChangeThemeImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$ChangeThemeImpl);
   }
 
   @override

@@ -13,11 +13,13 @@ part 'fetch_store_bloc.freezed.dart';
 class FetchStoreBloc extends Bloc<FetchStoreEvent, FetchStoreState> {
   FetchStoreBloc() : super(const FetchStoreState.initialState()) {
     on<FetchStoreEvent>((event, emit) async {
-      await event.map(tryToFetchStoreInformation: (value) async {
-        emit(const FetchStoreState.loading());
-        await Future.delayed(const Duration(seconds: 3));
-        emit(const FetchStoreState.success());
-      },);
+      await event.map(
+        tryToFetchStoreInformation: (value) async {
+          emit(const FetchStoreState.loading());
+          await Future.delayed(const Duration(seconds: 3));
+          emit(const FetchStoreState.success());
+        },
+      );
     });
   }
 }

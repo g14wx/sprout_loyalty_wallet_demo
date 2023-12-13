@@ -87,9 +87,15 @@ class MyApp extends StatelessWidget {
                   localizationsDelegates: AppLocalizations.localizationsDelegates,
                   supportedLocales: AppLocalizations.supportedLocales,
                   theme: ThemeData(
-                      useMaterial3: true, colorScheme: getIt<IColorSchema>().lightColorScheme, extensions: [lightCustomColors], textTheme: textTheme),
+                      useMaterial3: true,
+                      colorScheme: getIt<IColorSchema>().lightColorScheme,
+                      extensions: [lightCustomColors],
+                      textTheme: textTheme),
                   darkTheme: ThemeData(
-                      useMaterial3: true, colorScheme: getIt<IColorSchema>().darkColorScheme, extensions: [darkCustomColors], textTheme: textTheme),
+                      useMaterial3: true,
+                      colorScheme: getIt<IColorSchema>().darkColorScheme,
+                      extensions: [darkCustomColors],
+                      textTheme: textTheme),
                   onGenerateRoute: (settings) => AppRouter.onGenerateRoute(settings),
                   locale: Locale(appSettingsProvider.language),
                   themeMode: appSettingsProvider.isDarkTheme ? ThemeMode.dark : ThemeMode.light,

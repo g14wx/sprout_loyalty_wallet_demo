@@ -21,14 +21,12 @@ mixin _$StoreFromEnvModel {
   String get nameEnv => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $StoreFromEnvModelCopyWith<StoreFromEnvModel> get copyWith =>
-      throw _privateConstructorUsedError;
+  $StoreFromEnvModelCopyWith<StoreFromEnvModel> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $StoreFromEnvModelCopyWith<$Res> {
-  factory $StoreFromEnvModelCopyWith(
-          StoreFromEnvModel value, $Res Function(StoreFromEnvModel) then) =
+  factory $StoreFromEnvModelCopyWith(StoreFromEnvModel value, $Res Function(StoreFromEnvModel) then) =
       _$StoreFromEnvModelCopyWithImpl<$Res, StoreFromEnvModel>;
   @useResult
   $Res call({String name, int id, String nameEnv});
@@ -69,10 +67,8 @@ class _$StoreFromEnvModelCopyWithImpl<$Res, $Val extends StoreFromEnvModel>
 }
 
 /// @nodoc
-abstract class _$$StoreFromEnvModelImplCopyWith<$Res>
-    implements $StoreFromEnvModelCopyWith<$Res> {
-  factory _$$StoreFromEnvModelImplCopyWith(_$StoreFromEnvModelImpl value,
-          $Res Function(_$StoreFromEnvModelImpl) then) =
+abstract class _$$StoreFromEnvModelImplCopyWith<$Res> implements $StoreFromEnvModelCopyWith<$Res> {
+  factory _$$StoreFromEnvModelImplCopyWith(_$StoreFromEnvModelImpl value, $Res Function(_$StoreFromEnvModelImpl) then) =
       __$$StoreFromEnvModelImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -80,11 +76,9 @@ abstract class _$$StoreFromEnvModelImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$StoreFromEnvModelImplCopyWithImpl<$Res>
-    extends _$StoreFromEnvModelCopyWithImpl<$Res, _$StoreFromEnvModelImpl>
+class __$$StoreFromEnvModelImplCopyWithImpl<$Res> extends _$StoreFromEnvModelCopyWithImpl<$Res, _$StoreFromEnvModelImpl>
     implements _$$StoreFromEnvModelImplCopyWith<$Res> {
-  __$$StoreFromEnvModelImplCopyWithImpl(_$StoreFromEnvModelImpl _value,
-      $Res Function(_$StoreFromEnvModelImpl) _then)
+  __$$StoreFromEnvModelImplCopyWithImpl(_$StoreFromEnvModelImpl _value, $Res Function(_$StoreFromEnvModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -114,8 +108,7 @@ class __$$StoreFromEnvModelImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$StoreFromEnvModelImpl implements _StoreFromEnvModel {
-  const _$StoreFromEnvModelImpl(
-      {required this.name, required this.id, required this.nameEnv});
+  const _$StoreFromEnvModelImpl({required this.name, required this.id, required this.nameEnv});
 
   @override
   final String name;
@@ -146,15 +139,12 @@ class _$StoreFromEnvModelImpl implements _StoreFromEnvModel {
   @override
   @pragma('vm:prefer-inline')
   _$$StoreFromEnvModelImplCopyWith<_$StoreFromEnvModelImpl> get copyWith =>
-      __$$StoreFromEnvModelImplCopyWithImpl<_$StoreFromEnvModelImpl>(
-          this, _$identity);
+      __$$StoreFromEnvModelImplCopyWithImpl<_$StoreFromEnvModelImpl>(this, _$identity);
 }
 
 abstract class _StoreFromEnvModel implements StoreFromEnvModel {
-  const factory _StoreFromEnvModel(
-      {required final String name,
-      required final int id,
-      required final String nameEnv}) = _$StoreFromEnvModelImpl;
+  const factory _StoreFromEnvModel({required final String name, required final int id, required final String nameEnv}) =
+      _$StoreFromEnvModelImpl;
 
   @override
   String get name;
@@ -164,6 +154,5 @@ abstract class _StoreFromEnvModel implements StoreFromEnvModel {
   String get nameEnv;
   @override
   @JsonKey(ignore: true)
-  _$$StoreFromEnvModelImplCopyWith<_$StoreFromEnvModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$StoreFromEnvModelImplCopyWith<_$StoreFromEnvModelImpl> get copyWith => throw _privateConstructorUsedError;
 }

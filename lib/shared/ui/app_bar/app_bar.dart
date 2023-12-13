@@ -21,7 +21,12 @@ class BaseAppBar extends HookWidget implements PreferredSizeWidget {
   /// you can add more fields that meet your needs
 
   BaseAppBar(
-      {super.key, required this.title, required this.appBar, this.widgets, this.leading, this.authorizedToGetLostOrders});
+      {super.key,
+      required this.title,
+      required this.appBar,
+      this.widgets,
+      this.leading,
+      this.authorizedToGetLostOrders});
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +54,7 @@ class BaseAppBar extends HookWidget implements PreferredSizeWidget {
       leading: leading,
     );
   }
+
   @override
   Size get preferredSize => Size.fromHeight(appBar.preferredSize.height + appBarHeight.value);
 }

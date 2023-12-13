@@ -3,7 +3,6 @@ import 'package:loyalty_wallet/constants/stores/stores.dart';
 import 'package:loyalty_wallet/services/env_services/models/store_from_env_model/store_from_env_model.dart';
 
 class EnvResolver {
-
   static String? currentEnv;
   static StoreFromEnvModel? currentStore;
   static String resolveEnv() {
@@ -41,5 +40,4 @@ class EnvResolver {
     currentStore = envStore;
     return envStore;
   }
-
 }

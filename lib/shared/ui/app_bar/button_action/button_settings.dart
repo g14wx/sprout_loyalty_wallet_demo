@@ -21,7 +21,8 @@ class ButtonSettings extends HookConsumerWidget {
       ),
       icon: Container(
         padding: const EdgeInsets.all(7),
-        decoration: BoxDecoration(color: Theme.of(context).primaryColor, borderRadius: const BorderRadius.all(Radius.circular(50))),
+        decoration: BoxDecoration(
+            color: Theme.of(context).primaryColor, borderRadius: const BorderRadius.all(Radius.circular(50))),
         child: const Center(
             child: Icon(
           Icons.settings,
@@ -41,11 +42,13 @@ class ButtonSettings extends HookConsumerWidget {
       itemBuilder: (BuildContext context) => <PopupMenuEntry<SettingsItems>>[
         PopupMenuItem<SettingsItems>(
           value: const SettingsItems.changeLanguage(),
-          child: Text("${translations.changeLanguageTo}: ${appSettingsProvider.language == "en" ? translations.spanish : translations.english}"),
+          child: Text(
+              "${translations.changeLanguageTo}: ${appSettingsProvider.language == "en" ? translations.spanish : translations.english}"),
         ),
         PopupMenuItem<SettingsItems>(
           value: const SettingsItems.changeTheme(),
-          child: Text("${translations.changeThemeTo}: ${appSettingsProvider.isDarkTheme ? translations.light : translations.dark}"),
+          child: Text(
+              "${translations.changeThemeTo}: ${appSettingsProvider.isDarkTheme ? translations.light : translations.dark}"),
         ),
       ],
     );

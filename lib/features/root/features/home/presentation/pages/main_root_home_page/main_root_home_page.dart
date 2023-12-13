@@ -8,6 +8,7 @@ import 'package:loyalty_wallet/shared/navigation/nested/nested_navigation_screen
 import 'package:provider/provider.dart' as original_provider;
 import 'package:google_fonts/google_fonts.dart';
 part 'main_root_home_page_functions.dart';
+
 class MainRootHomePage extends HookConsumerWidget with NestedNavigationFunctionsMixin {
   const MainRootHomePage({super.key});
 
@@ -19,10 +20,12 @@ class MainRootHomePage extends HookConsumerWidget with NestedNavigationFunctions
           navigatorKey: original_provider.Provider.of<NavigatorKeysProvider>(listen: false, context).navigationHome,
           onGenerateRoute: AppRouter.onGenerateRouteRootHomeLandingPage),
       NestedScreen(
-          navigatorKey: original_provider.Provider.of<NavigatorKeysProvider>(listen: false, context).navigationHomePoints,
+          navigatorKey:
+              original_provider.Provider.of<NavigatorKeysProvider>(listen: false, context).navigationHomePoints,
           onGenerateRoute: AppRouter.onGenerateRouteRootHomePoints),
       NestedScreen(
-          navigatorKey: original_provider.Provider.of<NavigatorKeysProvider>(listen: false, context).navigationHomeSettings,
+          navigatorKey:
+              original_provider.Provider.of<NavigatorKeysProvider>(listen: false, context).navigationHomeSettings,
           onGenerateRoute: AppRouter.onGenerateRouteRootHomeSettings),
     ];
     return original_provider.Consumer<NavigatorKeysProvider>(
@@ -56,7 +59,7 @@ class MainRootHomePage extends HookConsumerWidget with NestedNavigationFunctions
             ),
             bottomNavigationBar: BottomNavigationBar(
               backgroundColor:
-              _getBackgroundColorBottomNavigationBar(navigatorKeysProvider.selectedIndexDrawer, context),
+                  _getBackgroundColorBottomNavigationBar(navigatorKeysProvider.selectedIndexDrawer, context),
               selectedLabelStyle: GoogleFonts.lato(color: Colors.white, fontWeight: FontWeight.bold),
               selectedIconTheme: const IconThemeData(color: Colors.white),
               items: <BottomNavigationBarItem>[

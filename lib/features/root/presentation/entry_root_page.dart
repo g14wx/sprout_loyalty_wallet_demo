@@ -10,7 +10,6 @@ class EntryRootPage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     useEffect(() {
       BlocProvider.of<FetchStoreBloc>(context).add(const FetchStoreEvent.tryToFetchStoreInformation());
       return null;

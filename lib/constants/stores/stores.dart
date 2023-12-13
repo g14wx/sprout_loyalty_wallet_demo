@@ -6,5 +6,4 @@ class Stores {
   static const String storeTwoName = "store_two";
   static const StoreFromEnvModel storeOne = StoreFromEnvModel(name: "Store One", id: 1, nameEnv: storeOneName);
   static const StoreFromEnvModel storeTwo = StoreFromEnvModel(name: "Store Two", id: 1, nameEnv: storeTwoName);
-
 }

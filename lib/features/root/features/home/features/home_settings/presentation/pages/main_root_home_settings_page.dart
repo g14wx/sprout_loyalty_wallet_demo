@@ -12,9 +12,7 @@ class MainRootHomeSettingsPage extends HookConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(translations.settings),
-        actions: const [
-          ButtonSettings()
-        ],
+        actions: const [ButtonSettings()],
       ),
     );
   }

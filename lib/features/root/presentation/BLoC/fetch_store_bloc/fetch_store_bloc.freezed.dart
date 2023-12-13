@@ -34,20 +34,17 @@ mixin _$FetchStoreEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_TryToFetchStoreInformation value)
-        tryToFetchStoreInformation,
+    required TResult Function(_TryToFetchStoreInformation value) tryToFetchStoreInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_TryToFetchStoreInformation value)?
-        tryToFetchStoreInformation,
+    TResult? Function(_TryToFetchStoreInformation value)? tryToFetchStoreInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_TryToFetchStoreInformation value)?
-        tryToFetchStoreInformation,
+    TResult Function(_TryToFetchStoreInformation value)? tryToFetchStoreInformation,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -55,14 +52,12 @@ mixin _$FetchStoreEvent {
 
 /// @nodoc
 abstract class $FetchStoreEventCopyWith<$Res> {
-  factory $FetchStoreEventCopyWith(
-          FetchStoreEvent value, $Res Function(FetchStoreEvent) then) =
+  factory $FetchStoreEventCopyWith(FetchStoreEvent value, $Res Function(FetchStoreEvent) then) =
       _$FetchStoreEventCopyWithImpl<$Res, FetchStoreEvent>;
 }
 
 /// @nodoc
-class _$FetchStoreEventCopyWithImpl<$Res, $Val extends FetchStoreEvent>
-    implements $FetchStoreEventCopyWith<$Res> {
+class _$FetchStoreEventCopyWithImpl<$Res, $Val extends FetchStoreEvent> implements $FetchStoreEventCopyWith<$Res> {
   _$FetchStoreEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -74,19 +69,16 @@ class _$FetchStoreEventCopyWithImpl<$Res, $Val extends FetchStoreEvent>
 /// @nodoc
 abstract class _$$TryToFetchStoreInformationImplCopyWith<$Res> {
   factory _$$TryToFetchStoreInformationImplCopyWith(
-          _$TryToFetchStoreInformationImpl value,
-          $Res Function(_$TryToFetchStoreInformationImpl) then) =
+          _$TryToFetchStoreInformationImpl value, $Res Function(_$TryToFetchStoreInformationImpl) then) =
       __$$TryToFetchStoreInformationImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$TryToFetchStoreInformationImplCopyWithImpl<$Res>
-    extends _$FetchStoreEventCopyWithImpl<$Res,
-        _$TryToFetchStoreInformationImpl>
+    extends _$FetchStoreEventCopyWithImpl<$Res, _$TryToFetchStoreInformationImpl>
     implements _$$TryToFetchStoreInformationImplCopyWith<$Res> {
   __$$TryToFetchStoreInformationImplCopyWithImpl(
-      _$TryToFetchStoreInformationImpl _value,
-      $Res Function(_$TryToFetchStoreInformationImpl) _then)
+      _$TryToFetchStoreInformationImpl _value, $Res Function(_$TryToFetchStoreInformationImpl) _then)
       : super(_value, _then);
 }
 
@@ -102,9 +94,7 @@ class _$TryToFetchStoreInformationImpl implements _TryToFetchStoreInformation {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$TryToFetchStoreInformationImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$TryToFetchStoreInformationImpl);
   }
 
   @override
@@ -141,8 +131,7 @@ class _$TryToFetchStoreInformationImpl implements _TryToFetchStoreInformation {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_TryToFetchStoreInformation value)
-        tryToFetchStoreInformation,
+    required TResult Function(_TryToFetchStoreInformation value) tryToFetchStoreInformation,
   }) {
     return tryToFetchStoreInformation(this);
   }
@@ -150,8 +139,7 @@ class _$TryToFetchStoreInformationImpl implements _TryToFetchStoreInformation {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_TryToFetchStoreInformation value)?
-        tryToFetchStoreInformation,
+    TResult? Function(_TryToFetchStoreInformation value)? tryToFetchStoreInformation,
   }) {
     return tryToFetchStoreInformation?.call(this);
   }
@@ -159,8 +147,7 @@ class _$TryToFetchStoreInformationImpl implements _TryToFetchStoreInformation {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_TryToFetchStoreInformation value)?
-        tryToFetchStoreInformation,
+    TResult Function(_TryToFetchStoreInformation value)? tryToFetchStoreInformation,
     required TResult orElse(),
   }) {
     if (tryToFetchStoreInformation != null) {
@@ -171,8 +158,7 @@ class _$TryToFetchStoreInformationImpl implements _TryToFetchStoreInformation {
 }
 
 abstract class _TryToFetchStoreInformation implements FetchStoreEvent {
-  const factory _TryToFetchStoreInformation() =
-      _$TryToFetchStoreInformationImpl;
+  const factory _TryToFetchStoreInformation() = _$TryToFetchStoreInformationImpl;
 }
 
 /// @nodoc
@@ -225,14 +211,12 @@ mixin _$FetchStoreState {
 
 /// @nodoc
 abstract class $FetchStoreStateCopyWith<$Res> {
-  factory $FetchStoreStateCopyWith(
-          FetchStoreState value, $Res Function(FetchStoreState) then) =
+  factory $FetchStoreStateCopyWith(FetchStoreState value, $Res Function(FetchStoreState) then) =
       _$FetchStoreStateCopyWithImpl<$Res, FetchStoreState>;
 }
 
 /// @nodoc
-class _$FetchStoreStateCopyWithImpl<$Res, $Val extends FetchStoreState>
-    implements $FetchStoreStateCopyWith<$Res> {
+class _$FetchStoreStateCopyWithImpl<$Res, $Val extends FetchStoreState> implements $FetchStoreStateCopyWith<$Res> {
   _$FetchStoreStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -243,17 +227,14 @@ class _$FetchStoreStateCopyWithImpl<$Res, $Val extends FetchStoreState>
 
 /// @nodoc
 abstract class _$$InitialStateImplCopyWith<$Res> {
-  factory _$$InitialStateImplCopyWith(
-          _$InitialStateImpl value, $Res Function(_$InitialStateImpl) then) =
+  factory _$$InitialStateImplCopyWith(_$InitialStateImpl value, $Res Function(_$InitialStateImpl) then) =
       __$$InitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InitialStateImplCopyWithImpl<$Res>
-    extends _$FetchStoreStateCopyWithImpl<$Res, _$InitialStateImpl>
+class __$$InitialStateImplCopyWithImpl<$Res> extends _$FetchStoreStateCopyWithImpl<$Res, _$InitialStateImpl>
     implements _$$InitialStateImplCopyWith<$Res> {
-  __$$InitialStateImplCopyWithImpl(
-      _$InitialStateImpl _value, $Res Function(_$InitialStateImpl) _then)
+  __$$InitialStateImplCopyWithImpl(_$InitialStateImpl _value, $Res Function(_$InitialStateImpl) _then)
       : super(_value, _then);
 }
 
@@ -269,8 +250,7 @@ class _$InitialStateImpl implements _InitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InitialStateImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$InitialStateImpl);
   }
 
   @override
@@ -351,18 +331,14 @@ abstract class _InitialState implements FetchStoreState {
 
 /// @nodoc
 abstract class _$$LoadingImplCopyWith<$Res> {
-  factory _$$LoadingImplCopyWith(
-          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+  factory _$$LoadingImplCopyWith(_$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
       __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$FetchStoreStateCopyWithImpl<$Res, _$LoadingImpl>
+class __$$LoadingImplCopyWithImpl<$Res> extends _$FetchStoreStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
-  __$$LoadingImplCopyWithImpl(
-      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
-      : super(_value, _then);
+  __$$LoadingImplCopyWithImpl(_$LoadingImpl _value, $Res Function(_$LoadingImpl) _then) : super(_value, _then);
 }
 
 /// @nodoc
@@ -377,8 +353,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$LoadingImpl);
   }
 
   @override
@@ -459,18 +434,14 @@ abstract class _Loading implements FetchStoreState {
 
 /// @nodoc
 abstract class _$$SuccessImplCopyWith<$Res> {
-  factory _$$SuccessImplCopyWith(
-          _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
+  factory _$$SuccessImplCopyWith(_$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
       __$$SuccessImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$FetchStoreStateCopyWithImpl<$Res, _$SuccessImpl>
+class __$$SuccessImplCopyWithImpl<$Res> extends _$FetchStoreStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
-  __$$SuccessImplCopyWithImpl(
-      _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
-      : super(_value, _then);
+  __$$SuccessImplCopyWithImpl(_$SuccessImpl _value, $Res Function(_$SuccessImpl) _then) : super(_value, _then);
 }
 
 /// @nodoc
@@ -485,8 +456,7 @@ class _$SuccessImpl implements _Success {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$SuccessImpl);
   }
 
   @override
