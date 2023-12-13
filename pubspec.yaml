@@ -140,3 +140,20 @@ flavorizr:
       ios:
         bundleId: "com.storeone.deli"
         icon: 'assets/icons/flavors/icon.storeone.png'
+
+    storetwo:
+      app:
+        name: "Store Two"
+
+      android:
+        applicationId: "storetwo.online.sprout.crm"
+        icon: 'assets/icons/flavors/icon.storetwo.png'
+        customConfig:
+          versionNameSuffix: "\"-production\""
+          signingConfig: signingConfigs.storetwo
+          versionCode: 100
+          minSdkVersion: 23
+
+      ios:
+        bundleId: "storetwo.online.sprout.crm"
+        icon: 'assets/icons/flavors/icon.storetwo.png'

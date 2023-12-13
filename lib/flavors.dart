@@ -1,5 +1,6 @@
 enum Flavor {
   storeone,
+  storetwo,
 }
 
 class F {
@@ -11,6 +12,8 @@ class F {
     switch (appFlavor) {
       case Flavor.storeone:
         return 'Store One';
+      case Flavor.storetwo:
+        return 'Store Two';
       default:
         return 'title';
     }
