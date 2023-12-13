@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_storethree.dart
+ASSET_PREFIX=storethree
+BUNDLE_NAME=Store Three
+BUNDLE_DISPLAY_NAME=Store Three
